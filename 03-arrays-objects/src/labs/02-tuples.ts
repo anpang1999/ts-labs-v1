@@ -6,3 +6,13 @@
  */
 
 // TODO: StudentScore 타입 선언, scores 배열 생성, passed 계산
+
+type StudentScore = [string, number];
+
+let scores: StudentScore[] = [
+  ["eunji", 85],
+  ["minsu", 67],
+  ["sora", 92],
+];
+
+const passed = scores;

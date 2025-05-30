@@ -14,3 +14,17 @@ const users = [
 const isActiveUser = (u: User) => u.isActive;
 findUser(users, isActiveUser) // { id: 2, name: 'Lee', isActive: true }
 */
+
+type User = { id: number; name: string; isActive: boolean };
+type Predicate = (u: User) => boolean;
+
+function findUser(users: User[], predicate: Predicate): User[] {
+  return users.filter(predicate);
+}
+
+const users = [
+  { id: 1, name: "Kim", isActive: false },
+  { id: 2, name: "Lee", isActive: true },
+];
+const isActiveUser = (u: User) => u.isActive;
+findUser(users, isActiveUser); // { id: 2, name: 'Lee', isActive: true }

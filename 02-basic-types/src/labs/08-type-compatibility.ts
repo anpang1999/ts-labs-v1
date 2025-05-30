@@ -12,3 +12,5 @@ let a1: any = 777;
 // b1 = u1;
 // u1 = n1;
 // a1 = b1;
+
+// any 와 unknown은 다 받을 수 있다

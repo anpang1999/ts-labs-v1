@@ -3,14 +3,14 @@
 
 // 요일: "Mon"~"Fri" 중 하나만 허용
 // let dayOfWeek: /* TODO */
-
+let dayOfWeek: "Mon" | "Tue";
 // dayOfWeek = "Mon";
 // dayOfWeek = "Fri";
 // dayOfWeek = "Sat"; // 이 줄은 에러가 나야 정상
 
 // yes/no만 허용
 // let answer: /* TODO */
-
+let answer: "yes" | "no";
 // answer = "yes";
 // answer = "no";
 // answer = "maybe"; // 이 줄은 에러가 나야 정상

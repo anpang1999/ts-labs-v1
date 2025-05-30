@@ -8,3 +8,16 @@
 const shout = (str: string) => str + '!';
 processStrings(['hi', 'bye'], shout) // ['hi!', 'bye!']
 */
+
+type Transform = (str: string) => string;
+
+function processStrings(strings: string[], transform: Transform): string[] {
+  const result: string[] = [];
+  for (const str of strings) {
+    result.push(transform(str));
+  }
+  return result;
+}
+
+const shout = (str: string) => str + "!";
+console.log(processStrings(["hi", "bye"], shout)); // ['hi!', 'bye!']

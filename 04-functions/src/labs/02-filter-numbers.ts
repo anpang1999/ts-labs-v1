@@ -8,3 +8,20 @@
 const isEven = (n: number) => n % 2 === 0;
 filterNumbers([1, 2, 3, 4], isEven) // [2, 4]
 */
+
+// 매개타입, 리턴타입
+type Predicate = (n: number) => boolean;
+
+function filterNumbers(numbers: number[], predicate: Predicate): number[] {
+  // const result: number[] = [];
+  // for (const num of numbers) {
+  //   if (predicate(num)) {
+  //     result.push(num);
+  //   }
+  // }
+  // return result;
+  return numbers.filter(predicate);
+}
+
+const isEven = (n: number) => n % 2 === 0;
+console.log(filterNumbers([1, 2, 3, 4], isEven)); // [2, 4]
