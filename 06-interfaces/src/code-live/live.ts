@@ -70,3 +70,12 @@ let userResponse: UserResponse = {
 // 4. 인덱스 시그니처
 // 키:값 구조
 // 객체의 속성명이 동적으로 정해질 때 사용
+type ScoreMap = {
+  [studentName: string]: number;
+};
+
+const scores: ScoreMap = {
+  Alice: 95,
+  Bob: 87,
+  Charlie: 100,
+};
